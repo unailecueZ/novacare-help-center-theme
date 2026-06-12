@@ -6224,3 +6224,31 @@ label {
   height: 18px;
 }
 
+
+/* ========================================
+   HIDE COMMUNITY SECTIONS
+   ======================================== */
+
+/* Hide all community-related sections */
+.community,
+.home-section.community,
+.section.community,
+[class*="community-"],
+.community-link,
+.community-image,
+.community-background-image {
+  display: none !important;
+}
+
+/* Hide community navigation links */
+a[href*="/community"],
+a[href*="community"],
+li:has(a[href*="/community"]) {
+  display: none !important;
+}
+
+/* Hide community pages completely */
+.is-community-page {
+  display: none !important;
+}
+
