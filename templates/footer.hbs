@@ -1,25 +1,155 @@
-<footer class="footer">
-  <div class="footer-inner">
-    {{#link 'help_center'}}{{help_center.name}}{{/link}}
+<footer class="footer novacare-footer">
+  <div class="novacare-footer-content">
+    <div class="novacare-footer-grid">
 
-    <div class="footer-language-selector">
-      {{#if alternative_locales}}
-        <div class="dropdown language-selector">
-          <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-            {{current_locale.name}}
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="dropdown-chevron-icon" aria-hidden="true">
-              <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"/>
+      <!-- Column 1: About & Logo -->
+      <div class="novacare-footer-column">
+        <div class="novacare-footer-logo">
+          <img src="{{asset 'novacare-icon.svg'}}" alt="NovaCare Health" width="48" height="48" />
+          <h3>NovaCare Health</h3>
+        </div>
+        <p class="novacare-footer-tagline">Caring for your wellbeing with compassion and expertise since 1995.</p>
+
+        <!-- Social Media -->
+        <div class="novacare-social-links">
+          <a href="https://facebook.com/novacarehealth" target="_blank" rel="noopener" aria-label="Facebook" class="novacare-social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
             </svg>
-          </button>
-          <span class="dropdown-menu dropdown-menu-end" role="menu">
-            {{#each alternative_locales}}
-              <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
-                {{name}}
-              </a>
-            {{/each}}
+          </a>
+          <a href="https://twitter.com/novacarehealth" target="_blank" rel="noopener" aria-label="Twitter" class="novacare-social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/company/novacarehealth" target="_blank" rel="noopener" aria-label="LinkedIn" class="novacare-social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <a href="https://instagram.com/novacarehealth" target="_blank" rel="noopener" aria-label="Instagram" class="novacare-social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="https://youtube.com/@novacarehealth" target="_blank" rel="noopener" aria-label="YouTube" class="novacare-social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: Patient Resources -->
+      <div class="novacare-footer-column">
+        <h4 class="novacare-footer-title">Patient Resources</h4>
+        <ul class="novacare-footer-links">
+          <li><a href="/hc/en-us/categories/patient-portal">Patient Portal</a></li>
+          <li><a href="/hc/en-us/categories/appointments">Schedule Appointment</a></li>
+          <li><a href="/hc/en-us/categories/medical-records">Medical Records</a></li>
+          <li><a href="/hc/en-us/categories/billing">Billing & Insurance</a></li>
+          <li><a href="/hc/en-us/categories/prescription-refills">Prescription Refills</a></li>
+          <li><a href="/hc/en-us/categories/test-results">Lab Results</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Services -->
+      <div class="novacare-footer-column">
+        <h4 class="novacare-footer-title">Our Services</h4>
+        <ul class="novacare-footer-links">
+          <li><a href="/hc/en-us/categories/primary-care">Primary Care</a></li>
+          <li><a href="/hc/en-us/categories/urgent-care">Urgent Care</a></li>
+          <li><a href="/hc/en-us/categories/specialty-care">Specialty Care</a></li>
+          <li><a href="/hc/en-us/categories/telehealth">Telehealth Visits</a></li>
+          <li><a href="/hc/en-us/categories/preventive-care">Preventive Care</a></li>
+          <li><a href="/hc/en-us/categories/wellness-programs">Wellness Programs</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: About & Contact -->
+      <div class="novacare-footer-column">
+        <h4 class="novacare-footer-title">About Us</h4>
+        <ul class="novacare-footer-links">
+          <li><a href="/hc/en-us/articles/about-novacare">About NovaCare</a></li>
+          <li><a href="/hc/en-us/articles/our-doctors">Our Doctors</a></li>
+          <li><a href="/hc/en-us/articles/locations">Locations</a></li>
+          <li><a href="/hc/en-us/articles/careers">Careers</a></li>
+          <li><a href="/hc/en-us/articles/newsroom">Newsroom</a></li>
+          {{#link 'new_request'}}<li>Contact Support</li>{{/link}}
+        </ul>
+
+        <!-- Emergency Contact -->
+        <div class="novacare-footer-emergency">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <div>
+            <strong>Emergency Line</strong>
+            <a href="tel:+1-800-555-CARE" class="novacare-phone">1-800-555-CARE</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="novacare-footer-bottom">
+      <div class="novacare-footer-bottom-left">
+        <p>&copy; 2026 NovaCare Health. All rights reserved.</p>
+        <ul class="novacare-footer-legal">
+          <li><a href="/hc/en-us/articles/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/hc/en-us/articles/terms-of-service">Terms of Service</a></li>
+          <li><a href="/hc/en-us/articles/hipaa-notice">HIPAA Notice</a></li>
+          <li><a href="/hc/en-us/articles/accessibility">Accessibility</a></li>
+        </ul>
+      </div>
+
+      <div class="novacare-footer-bottom-right">
+        {{#if alternative_locales}}
+          <div class="dropdown language-selector novacare-language-selector">
+            <button class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              {{current_locale.name}}
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="dropdown-chevron-icon" aria-hidden="true">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5"/>
+              </svg>
+            </button>
+            <span class="dropdown-menu dropdown-menu-end" role="menu">
+              {{#each alternative_locales}}
+                <a href="{{url}}" dir="{{direction}}" rel="nofollow" role="menuitem">
+                  {{name}}
+                </a>
+              {{/each}}
+            </span>
+          </div>
+        {{/if}}
+
+        <div class="novacare-footer-certifications">
+          <span class="novacare-cert-badge" title="HIPAA Compliant">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M9 12l2 2 4-4"/>
+            </svg>
+            HIPAA
+          </span>
+          <span class="novacare-cert-badge" title="Joint Commission Accredited">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7"/>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+            </svg>
+            Accredited
           </span>
         </div>
-      {{/if}}
+      </div>
     </div>
   </div>
 </footer>

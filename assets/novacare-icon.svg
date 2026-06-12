@@ -1,0 +1,27 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Medical Shield Background -->
+  <path d="M28 4L10 12V26C10 40 18 50 28 54C38 50 46 40 46 26V12L28 4Z"
+        fill="url(#shield-gradient)"/>
+
+  <!-- Medical Cross -->
+  <rect x="24" y="18" width="8" height="24" rx="2" fill="white"/>
+  <rect x="16" y="26" width="24" height="8" rx="2" fill="white"/>
+
+  <!-- Heart Pulse Accent -->
+  <path d="M18 30 L23 30 L26 22 L29 38 L32 30 L37 30"
+        stroke="#4A90E2"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"
+        opacity="0.8"/>
+
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="shield-gradient" x1="10" y1="4" x2="46" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2C5F8D"/>
+      <stop offset="50%" stop-color="#4A90E2"/>
+      <stop offset="100%" stop-color="#2C5F8D"/>
+    </linearGradient>
+  </defs>
+</svg>

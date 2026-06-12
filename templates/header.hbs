@@ -1,12 +1,9 @@
 <a class="skip-navigation" tabindex="1" href="#main-content">{{t 'skip_navigation' }}</a>
 
 <header class="header">
-  <div class="logo">
+  <div class="logo novacare-logo">
     {{#link 'help_center'}}
-      <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}" />
-      {{#if settings.show_brand_name}}
-        <span aria-hidden="true">{{help_center.name}}</span>
-      {{/if}}
+      <img src="{{asset 'novacare-logo-full.svg'}}" alt="NovaCare Health - Home" class="novacare-logo-img" />
     {{/link}}
   </div>
 

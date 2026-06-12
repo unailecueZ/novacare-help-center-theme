@@ -1,0 +1,51 @@
+<svg width="220" height="56" viewBox="0 0 220 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Medical Shield Background -->
+  <path d="M28 4L14 10V20C14 30 20 38 28 42C36 38 42 30 42 20V10L28 4Z"
+        fill="#2C5F8D" opacity="0.1"/>
+
+  <!-- Medical Cross -->
+  <rect x="25" y="14" width="6" height="20" rx="1" fill="#2C5F8D"/>
+  <rect x="18" y="21" width="20" height="6" rx="1" fill="#2C5F8D"/>
+
+  <!-- Heart Pulse Line -->
+  <path d="M16 26 L20 26 L22 20 L24 32 L26 26 L28 26"
+        stroke="#4A90E2"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"/>
+
+  <!-- Plus symbol detail -->
+  <circle cx="21" cy="18" r="1.5" fill="#27AE60"/>
+  <circle cx="35" cy="18" r="1.5" fill="#27AE60"/>
+  <circle cx="21" cy="30" r="1.5" fill="#27AE60"/>
+  <circle cx="35" cy="30" r="1.5" fill="#27AE60"/>
+
+  <!-- Text: NovaCare -->
+  <text x="52" y="28"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="20"
+        font-weight="700"
+        fill="#2C5F8D">
+    NovaCare
+  </text>
+
+  <!-- Text: Health -->
+  <text x="149" y="28"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="16"
+        font-weight="500"
+        fill="#718096">
+    Health
+  </text>
+
+  <!-- Tagline -->
+  <text x="52" y="42"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="9"
+        font-weight="500"
+        letter-spacing="1.5"
+        fill="#A0AEC0">
+    CARING FOR YOUR WELLBEING
+  </text>
+</svg>
