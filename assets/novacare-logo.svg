@@ -1,0 +1,31 @@
+<svg width="200" height="48" viewBox="0 0 200 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon: Healthcare Cross with Heartbeat -->
+  <rect x="2" y="18" width="28" height="12" rx="2" fill="#2C5F8D"/>
+  <rect x="12" y="8" width="8" height="32" rx="2" fill="#2C5F8D"/>
+
+  <!-- Heartbeat Line -->
+  <path d="M4 24 L10 24 L13 16 L17 32 L20 24 L26 24"
+        stroke="#4A90E2"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"/>
+
+  <!-- Text: NovaCare -->
+  <text x="42" y="30"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="22"
+        font-weight="700"
+        fill="#2C5F8D">
+    NovaCare
+  </text>
+
+  <!-- Tagline: Health -->
+  <text x="145" y="30"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="16"
+        font-weight="400"
+        fill="#718096">
+    Health
+  </text>
+</svg>

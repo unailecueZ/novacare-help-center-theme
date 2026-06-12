@@ -1,37 +1,91 @@
 <h1 class="visibility-hidden">{{ help_center.name }}</h1>
 
-<section id="main-content" class="section hero">
-  <div class="hero-inner">
-    <h2 class="visibility-hidden">{{ t 'search' }}</h2>
-    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" focusable="false" viewBox="0 0 12 12" class="search-icon" aria-hidden="true">
-      <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"/>
-      <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"/>
-    </svg>
-    {{search submit=false instant=settings.instant_search class='search search-full'}}
+<section id="main-content" class="section novacare-hero">
+  <div class="novacare-hero-content">
+    <div class="novacare-hero-badge">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+      </svg>
+      <span>Healthcare Support</span>
+    </div>
+    <h2 class="novacare-hero-title">How can we help you today?</h2>
+    <p class="novacare-hero-subtitle">Search our knowledge base or browse categories below</p>
+
+    <div class="novacare-search-container">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="novacare-search-icon">
+        <circle cx="11" cy="11" r="8"/>
+        <path d="m21 21-4.35-4.35"/>
+      </svg>
+      {{search submit=false instant=settings.instant_search class='search novacare-search'}}
+    </div>
+
+    <div class="novacare-quick-links">
+      <span class="novacare-quick-label">Popular topics:</span>
+      <a href="#" class="novacare-quick-link">Billing</a>
+      <a href="#" class="novacare-quick-link">Appointments</a>
+      <a href="#" class="novacare-quick-link">Patient Portal</a>
+    </div>
+  </div>
+
+  <div class="novacare-hero-decoration">
+    <div class="novacare-hero-circle novacare-circle-1"></div>
+    <div class="novacare-hero-circle novacare-circle-2"></div>
+    <div class="novacare-hero-circle novacare-circle-3"></div>
   </div>
 </section>
 
-<div class="container">
+<div class="container novacare-container">
   <section class="section knowledge-base">
-    <h2 class="visibility-hidden">{{ t 'categories' }}</h2>
-    <section class="categories blocks">
-      <ul class="blocks-list">
+    <div class="novacare-section-header">
+      <h2 class="novacare-section-title">Browse by Category</h2>
+      <p class="novacare-section-subtitle">Find answers organized by topic</p>
+    </div>
+
+    <section class="categories novacare-categories">
+      <ul class="novacare-category-grid">
         {{#each categories}}
           {{#if ../has_multiple_categories}}
-            <li class="blocks-item">
-              <a href='{{url}}' class="blocks-item-link">
-                <span class="blocks-item-title">{{name}}</span>
-                <span class="blocks-item-description">{{excerpt description}}</span>
+            <li class="novacare-category-card">
+              <a href='{{url}}' class="novacare-category-link">
+                <div class="novacare-category-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                  </svg>
+                </div>
+                <div class="novacare-category-content">
+                  <h3 class="novacare-category-title">{{name}}</h3>
+                  <p class="novacare-category-description">{{excerpt description}}</p>
+                  <span class="novacare-category-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </span>
+                </div>
               </a>
             </li>
           {{else}}
             {{#each sections}}
-              <li class="blocks-item">
-                <a href='{{url}}' class="blocks-item-link">
-                  <span class="blocks-item-title">
-                    {{name}}
-                  </span>
-                  <span class="blocks-item-description">{{excerpt description}}</span>
+              <li class="novacare-category-card">
+                <a href='{{url}}' class="novacare-category-link">
+                  <div class="novacare-category-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                      <polyline points="14 2 14 8 20 8"/>
+                      <line x1="16" y1="13" x2="8" y2="13"/>
+                      <line x1="16" y1="17" x2="8" y2="17"/>
+                      <polyline points="10 9 9 9 8 9"/>
+                    </svg>
+                  </div>
+                  <div class="novacare-category-content">
+                    <h3 class="novacare-category-title">{{name}}</h3>
+                    <p class="novacare-category-description">{{excerpt description}}</p>
+                    <span class="novacare-category-arrow">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                      </svg>
+                    </span>
+                  </div>
                 </a>
               </li>
             {{/each}}
@@ -42,21 +96,28 @@
     </section>
 
     {{#if promoted_articles}}
-      <section class="articles">
-        <h2>{{t 'promoted_articles'}}</h2>
-        <ul class="article-list promoted-articles">
+      <section class="novacare-featured-section">
+        <div class="novacare-section-header">
+          <h2 class="novacare-section-title">Featured Articles</h2>
+          <p class="novacare-section-subtitle">Most helpful resources</p>
+        </div>
+        <ul class="novacare-featured-grid">
           {{#each promoted_articles}}
-            <li class="promoted-articles-item">
-                <a href="{{url}}">
-                  {{title}}
-
-                  {{#if internal}}
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" focusable="false" viewBox="0 0 16 16" class="icon-lock" title="{{t 'internal'}}">
-                      <rect width="12" height="9" x="2" y="7" fill="currentColor" rx="1" ry="1"/>
-                      <path fill="none" stroke="currentColor" d="M4.5 7.5V4a3.5 3.5 0 017 0v3.5"/>
-                    </svg>
-                  {{/if}}
-                </a>
+            <li class="novacare-featured-item">
+              <a href="{{url}}" class="novacare-featured-link">
+                <div class="novacare-featured-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                  </svg>
+                </div>
+                <span class="novacare-featured-title">{{title}}</span>
+                {{#if internal}}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="novacare-lock-icon" title="{{t 'internal'}}">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                  </svg>
+                {{/if}}
+              </a>
             </li>
           {{/each}}
         </ul>
