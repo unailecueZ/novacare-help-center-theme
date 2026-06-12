@@ -6229,26 +6229,16 @@ label {
    HIDE COMMUNITY SECTIONS
    ======================================== */
 
-/* Hide all community-related sections */
-.community,
+/* ========================================
+   HIDE COMMUNITY SECTION - HOME PAGE ONLY
+   ======================================== */
+
+/* Only hide the community section/block on home page */
 .home-section.community,
-.section.community,
-[class*="community-"],
-.community-link,
-.community-image,
-.community-background-image {
+.section.home-section.community {
   display: none !important;
 }
 
-/* Hide community navigation links */
-a[href*="/community"],
-a[href*="community"],
-li:has(a[href*="/community"]) {
-  display: none !important;
-}
-
-/* Hide community pages completely */
-.is-community-page {
-  display: none !important;
-}
+/* Keep community links in navigation visible */
+/* Community pages remain accessible via navigation */
 
